@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>nova-tela</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-item no-padding>
+    <ion-label position="floating">Nome</ion-label>
+    <ion-input [(ngModel)]="usuario.nome"></ion-input>
+  </ion-item>
+  <ion-item no-padding>
+    <ion-label position="floating">Sobrenome</ion-label>
+    <ion-input [(ngModel)]="usuario.sobrenome"></ion-input>
+  </ion-item>
+  <ion-card padding>
+    <ion-text>Nome: {{usuario.nome + ' ' + usuario.sobrenome}}</ion-text>
+  </ion-card>
+</ion-content>

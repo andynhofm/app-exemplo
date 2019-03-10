@@ -1,0 +1,32 @@
+<ion-app>
+  <ion-menu type="overlay" contentId="routerOutlet">
+    <ion-header>
+      <ion-toolbar color="primary">
+        <ion-row>
+          <ion-title>
+            Título do menu
+          </ion-title>
+        </ion-row>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content>
+      <ion-row>
+        <ion-item style="width: 95%" routerLink="/home">
+          Home
+        </ion-item>
+      </ion-row>
+      <ion-row>
+        <ion-item style="width: 95%" routerLink="/nova-tela">
+          Nova tela
+        </ion-item>
+      </ion-row>
+    </ion-content>
+    <ion-footer>
+      <ion-col>
+        Roda-pé do menu
+      </ion-col>
+    </ion-footer>
+  </ion-menu>
+
+  <ion-router-outlet id="routerOutlet"></ion-router-outlet>
+</ion-app>

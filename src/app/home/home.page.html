@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Meu primeiro App
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-card padding>
+        <ion-toggle color="dark" [(ngModel)]="helloHabilitado"></ion-toggle>
+        <ion-button color="primary" expand="block" (click)="eventoHello()"
+                    [disabled]="!helloHabilitado">Hello!
+        </ion-button>
+    </ion-card>
+
+    <ion-card padding>
+        <ion-button color="success" routerLink="/nova-tela">Nova tela</ion-button>
+    </ion-card>
+</ion-content>
